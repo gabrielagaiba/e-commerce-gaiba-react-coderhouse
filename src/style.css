@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.logo {
+    width: 70px;    
+}
+.nav-bar {
+    font-family: 'Acme', sans-serif;
+}
