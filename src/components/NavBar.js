@@ -1,3 +1,8 @@
+import CartWidget from "./CartWidget";
+import NavBarItem from "./NavBarItem";
+
+const itemNav = ['Tienda', 'Locales', 'Franquicias', 'Nosotros', 'Contacto']
+
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-bar">
@@ -7,23 +12,10 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">     
-            <li className="nav-item">
-              <a className="nav-link" href="#">Tienda</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Locales</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Franquicias</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Nosotros</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Contacto</a>
-            </li>
+          <ul className="navbar-nav">
+            {itemNav.map((elemento, index) => <NavBarItem itemNavBar={elemento} key={index}/>)}
           </ul>
+          <CartWidget/>
         </div>
       </div>
     </nav>
