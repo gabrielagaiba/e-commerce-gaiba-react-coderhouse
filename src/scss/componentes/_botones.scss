@@ -1,0 +1,13 @@
+//Botones scss
+@import '../bases/variables';
+
+.button {
+    padding: nth(
+        $padding,
+        1
+    );
+    @extend %button-form;
+    &:hover {
+        @extend %active-hover;
+    } 
+}

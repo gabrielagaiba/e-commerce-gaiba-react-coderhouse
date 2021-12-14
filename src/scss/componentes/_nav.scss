@@ -1,0 +1,11 @@
+//navBar scss
+@import '../bases/variables';
+.logo {
+    width: nth(
+        $width,
+        10
+    );
+}
+.nav-bar {
+    font-family: $font;
+}
