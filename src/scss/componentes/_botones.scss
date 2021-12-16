@@ -1,13 +1,21 @@
 //Botones scss
 @import '../bases/variables';
-
-.button {
-    padding: nth(
-        $padding,
-        1
-    );
-    @extend %button-form;
+.boton-count {
+    @extend %button-count;
     &:hover {
         @extend %active-hover;
     } 
+}
+
+.boton-sumar {
+    background-color: $color-segundo
+
+}
+
+.boton-restar{
+    background-color: $color-tercero
+}
+
+.boton-agregar{
+    background-color: $color-cuarto
 }

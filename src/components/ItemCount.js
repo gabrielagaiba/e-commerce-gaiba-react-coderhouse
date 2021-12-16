@@ -26,9 +26,9 @@ const ItemCount = ({stock, initial, onAdd}) => {
   return (
     <>
       <p>Contador Actual: {contador}</p>
-      <button onClick={sumar} className="button">Sumar</button>      
-      <button onClick={restar} className="button">Restar</button>
-      <button onClick={agregar} className="button">Agregar</button>
+      <button onClick={sumar} className="boton-count boton-sumar">Sumar</button>      
+      <button onClick={restar} className="boton-count boton-restar">Restar</button>
+      <button onClick={agregar} className="boton-count boton-agregar">Agregar</button>
     </>
   )
 }
