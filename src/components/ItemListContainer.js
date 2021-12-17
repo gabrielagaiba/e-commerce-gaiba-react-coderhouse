@@ -16,7 +16,7 @@ const ItemListContainer =(props) => {
             setTimeout(() => {
                 res(productosIniciales);
             }, 2000);
-    });
+        });
     
         promesa.then((productos) => {
             console.log("Todo ok");

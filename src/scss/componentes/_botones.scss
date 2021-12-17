@@ -1,5 +1,6 @@
 //Botones scss
 @import '../bases/variables';
+
 .boton-count {
     @extend %button-count;
     &:hover {
