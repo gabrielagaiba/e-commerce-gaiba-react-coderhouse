@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 const Item =({item}) => {
 
     return (
         <>            
             <h3>{item.nombre}</h3>
             <img className="img-item" src={item.imagenSrc} alt={item.nombre}/>
-            <button className="boton-count boton-agregar">Ver detalle</button>
+            <NavLink to={`/item/${item.id}`}><button className="boton-count boton-agregar">Ver detalle</button></NavLink>
             <h5>Precio $ {item.precio}</h5>
             <p>Descripción: {item.descripcion}</p>
         </>

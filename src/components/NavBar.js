@@ -1,19 +1,28 @@
 import CartWidget from "./CartWidget";
 import NavBarItem from "./NavBarItem";
+import { Link } from "react-router-dom";
 
-const itemNav = ['Tienda', 'Locales', 'Franquicias', 'Nosotros', 'Contacto']
+const itemNav = [
+  { name: "Pizzas", url: "/categorias/pizzas", id: 1 },
+  { name: "Cervezas", url: "/categorias/cervezas", id: 2 },  
+  { name: "Locales", url: "/locales", id: 3 },
+  { name: "Franquicias", url: "/franquicias", id: 4 },
+  { name: "Nosotros", url: "/nosotros", id: 5 },
+  { name: "Contacto", url: "/contacto", id: 6 }
+]
+
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-bar">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#"><img src="/logo-rabona.png" className="logo" alt="logo"/></a>
+        <Link className="navbar-brand" to="/"><img src="/logo-rabona.png" className="logo" alt="logo"/></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            {itemNav.map((elemento, index) => <NavBarItem itemNavBar={elemento} key={index}/>)}
+            {itemNav.map((elemento) => <NavBarItem itemNavBar={elemento} key={elemento.id}/>)}
           </ul>
           <CartWidget/>
         </div>
