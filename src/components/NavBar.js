@@ -3,6 +3,7 @@ import NavBarItem from "./NavBarItem";
 import { Link } from "react-router-dom";
 
 const itemNav = [
+  //pondria productos y luego pizza o cerveza?
   { name: "Pizzas", url: "/categorias/pizzas", id: 1 },
   { name: "Cervezas", url: "/categorias/cervezas", id: 2 },  
   { name: "Locales", url: "/locales", id: 3 },
