@@ -1,0 +1,18 @@
+//Texto scss
+@import '../bases/variables';
+
+.rojo, .negro {
+    font-family: $font;
+    font-size: nth(
+        $font-size,
+        3
+    );
+}
+
+.negro {
+    color: $color-quinto;
+}
+
+.rojo {
+    color: red;
+}

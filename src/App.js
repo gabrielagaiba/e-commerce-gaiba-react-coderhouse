@@ -9,10 +9,12 @@ import Nosotros from "./components/main/Nosotros";
 import Contacto from "./components/main/Contacto";
 import Carrito from "./components/main/Carrito";
 import Error from "./components/main/Error"
+import CustomProvider from './CartContext';
 
 function App() {
 
   return (
+    <CustomProvider>
       <BrowserRouter>
         <NavBar />
         <main>
@@ -28,7 +30,8 @@ function App() {
             <Route path="*" element={ <Error /> } />            
           </Routes>
         </main>
-      </BrowserRouter>  
+      </BrowserRouter>
+    </CustomProvider>
   )
 }
 
