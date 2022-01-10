@@ -1,5 +1,6 @@
 import CartWidget from "./CartWidget";
 import NavBarItem from "./NavBarItem";
+import { useConsumirContexto } from "../CartContext";
 import { Link } from "react-router-dom";
 
 const itemNav = [
@@ -14,6 +15,8 @@ const itemNav = [
 
 
 const NavBar = () => {
+  const { carrito } = useConsumirContexto()
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-bar">
       <div className="container-fluid">
@@ -25,7 +28,9 @@ const NavBar = () => {
           <ul className="navbar-nav">
             {itemNav.map((elemento) => <NavBarItem itemNavBar={elemento} key={elemento.id}/>)}
           </ul>
-          <CartWidget/>
+           { carrito.length ? 
+                <CartWidget/>
+                : null }
         </div>
       </div>
     </nav>

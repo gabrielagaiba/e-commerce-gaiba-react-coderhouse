@@ -10,6 +10,7 @@ export const useConsumirContexto = () => {
 
 const CustomProvider = ({children})=>{
     const [cantidadTotal, setCantidadTotal] = useState(0);
+    const [precioTotal, setPrecioTotal] = useState(0);
     const [carrito, setCarrito]= useState([]);
 
     const agregarAlCarrito = (cantidad,nuevoProducto)=> {
@@ -17,6 +18,7 @@ const CustomProvider = ({children})=>{
             const indexOfProducto = carrito.findIndex((producto) => {return producto.id === nuevoProducto.id})
             const cantidadAnterior = carrito[indexOfProducto].cantidad
             setCantidadTotal(cantidadTotal - cantidadAnterior + nuevoProducto.cantidad)
+            setPrecioTotal(precioTotal - cantidadAnterior * nuevoProducto.precio + nuevoProducto.cantidad * nuevoProducto.precio)
             const copiaCarrito = [...carrito]
             copiaCarrito[indexOfProducto] = nuevoProducto
             setCarrito(copiaCarrito)
@@ -25,19 +27,21 @@ const CustomProvider = ({children})=>{
             copia.push(nuevoProducto)
             setCarrito(copia)
             setCantidadTotal(cantidadTotal + cantidad)
+            setPrecioTotal(precioTotal + nuevoProducto.precio * nuevoProducto.cantidad)
        }
     }
 
     const removerDelCarrito = (id)=>{
-        //setPrecioTotal para que vaya sumando el precio
         const indexOfProducto = carrito.findIndex((producto) => {return producto.id === id})
         setCantidadTotal(cantidadTotal - carrito[indexOfProducto].cantidad)
+        setPrecioTotal(precioTotal - carrito[indexOfProducto].cantidad * carrito[indexOfProducto].precio)
         setCarrito(carrito.filter( (producto) => producto.id !== id))
     }
 
     const removerTodo = () => {
         setCarrito([]);
         setCantidadTotal(0);
+        setPrecioTotal(0);
     }
 
     function isInCart(id){
@@ -51,6 +55,7 @@ const CustomProvider = ({children})=>{
     const valorDelContexto = {
         cantidadTotal,
         carrito,
+        precioTotal,
         agregarAlCarrito,
         removerDelCarrito,
         removerTodo,
