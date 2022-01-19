@@ -21,7 +21,7 @@ const ItemDetail = ( {item} ) => {
             <hr/>
             <article>
                 <h3>{item.nombre}</h3>
-                <img className="img-item" src={item.imagenSrc} alt={item.nombre}/>
+                <img className="img-item" src={item.imagen} alt={item.nombre}/>
                 <h5>Precio $ {item.precio}</h5>
                 <p>Descripción: {item.descripcion}</p>
             </article>
