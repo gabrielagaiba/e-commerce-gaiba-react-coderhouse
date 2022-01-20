@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
-import { db } from "../../firebase"
-import { getDocs, query, collection, where, doc } from 'firebase/firestore'
-import ItemList from './ItemList'
+import { db } from "../../firebase";
+import { getDocs, query, collection, where, doc } from "firebase/firestore";
+import ItemList from "./ItemList";
 
 /*
 const productosIniciales = [
@@ -33,7 +33,7 @@ const ItemListContainer =(props) => {
             getDocs(consulta)
                 .then( (resultado) => {
                     const docs = resultado.docs;
-                    setLista(docs.map((doc) => ({ idAutogenerado: doc.id, ...doc.data()})));
+                    setLista(docs.map((doc) => ({ id: doc.id, ...doc.data()})));
                     /*
                     const listaProductos = docs.map((doc) => {
                         const docData = doc.data();
@@ -52,7 +52,7 @@ const ItemListContainer =(props) => {
         } else {
              getDocs(productosCollection) //para traer todos los documentos
                 .then(({docs})=> {  //resultado : seria una representacion de lo q hay en la DB segun esta consulta
-                    setLista(docs.map((doc) => ({ idAutogenerado: doc.id, ...doc.data()})));
+                    setLista(docs.map((doc) => ({ id: doc.id, ...doc.data()})));
                 })
                 .catch((error)=> {
                     console.log(error);

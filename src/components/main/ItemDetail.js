@@ -1,7 +1,7 @@
-import ItemCount from './ItemCount'
+import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useConsumirContexto } from "../../CartContext"
+import { useConsumirContexto } from "../../CartContext";
 
 const ItemDetail = ( {item} ) => {
 
@@ -28,7 +28,7 @@ const ItemDetail = ( {item} ) => {
             
             { cantidad ? 
                 <Link to="/carrito"><button className="boton-count boton-sumar">Finalizar compra</button></Link>
-                : <ItemCount stock={10} initial={1} onAdd={onAdd}/>}
+                : <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>}
         </>:<></>
     )
 }

@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { collection, doc, getDoc } from 'firebase/firestore'
-import { db } from "../../firebase"
-import ItemDetail from './ItemDetail'
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { collection, doc, getDoc } from "firebase/firestore";
+import { db } from "../../firebase";
+import ItemDetail from "./ItemDetail";
 
 /*
 const productosIniciales = [
@@ -29,7 +29,9 @@ const ItemDetailContainer = () => {
         const refDoc = doc(productosCollection, idProducto)
         getDoc(refDoc)
             .then((resultado) => {
-                setProducto(resultado.data());
+                const productoData = resultado.data();
+                productoData.id = idProducto;
+                setProducto(productoData);
             })
             .catch((error)=> {
                 console.log(error);
