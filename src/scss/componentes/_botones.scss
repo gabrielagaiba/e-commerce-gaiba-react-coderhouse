@@ -1,11 +1,13 @@
 //Botones scss
 @import '../bases/variables';
 
-.boton-count {
-    @extend %button-count;
+.btn {    
     &:hover {
         @extend %active-hover;
-    } 
+    }
+    color: $color-primero;
+    margin: 2px;
+    font-family: $font;
 }
 
 .boton-sumar {

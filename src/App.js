@@ -10,6 +10,7 @@ import Contacto from "./components/main/Contacto";
 import Carrito from "./components/main/Carrito";
 import Error from "./components/main/Error";
 import CustomProvider from './CartContext'
+import Formulario from "./components/main/Formulario";
 
 function App() {
 
@@ -17,16 +18,17 @@ function App() {
     <CustomProvider>
       <BrowserRouter>
         <NavBar />
-        <main>
+        <main className="main-style">
           <Routes>            
-            <Route path="/" element={<ItemListContainer greeting="Gaby" />}/>
-            <Route path="/categorias/:nombreCategoria" element={<ItemListContainer greeting="Gaby" />}/>
+            <Route path="/" element={<ItemListContainer />}/>
+            <Route path="/categorias/:nombreCategoria" element={<ItemListContainer />}/>
             <Route path="/item/:idProducto" element={<ItemDetailContainer />}/>
             <Route path="/locales" element={ <Locales />} />
             <Route path="/franquicias" element={ <Franquicias />} />
             <Route path="/nosotros" element={ <Nosotros /> } />
             <Route path="/contacto" element={ <Contacto /> } />
             <Route path="/carrito" element={ <Carrito /> } />
+            <Route path="/franquicias" element={ <Formulario />} />
             <Route path="*" element={ <Error /> } />            
           </Routes>
         </main>

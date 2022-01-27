@@ -9,3 +9,8 @@
 .nav-bar {
     font-family: $font;
 }
+
+.navbar-expand-lg, .navbar-collapse {
+    justify-content: flex-end;
+
+}
