@@ -28,7 +28,8 @@ Video
 
 ---
 
-## Diseño
+## Diseño 
+imagenes de cmo queda en desktop y responsive
 
 
 ---
@@ -63,6 +64,7 @@ Video
 <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://retool.com/integrations-logos/firestore.svg" alt="firestore" width="40" height="40"/></a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="git-hub" width="40" height="40"/></a>
+
 ---
 
 ## Instalación
@@ -76,7 +78,7 @@ Video
         
         [https://gitforwindows.org/](https://gitforwindows.org/)
 
-1- Clonar el repositorio deGitHub
+1- Clonar el repositorio de GitHub
     
      git clone https://github.com/gabrielagaiba/e-commerce-gaiba-react-coderhouse.git
 

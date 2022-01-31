@@ -1,0 +1,17 @@
+//Body scss
+@import '../bases/variables';
+
+.body-style, .main-style {
+    background-color: rgb(243, 235, 226);
+}
+
+.main-style {
+    margin: nth(
+        $margin,
+        5
+    );
+    width: nth(
+        $width,
+        17
+     );
+}

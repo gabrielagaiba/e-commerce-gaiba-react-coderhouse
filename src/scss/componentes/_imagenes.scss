@@ -1,0 +1,13 @@
+//imagenes scss
+@import '../bases/variables';
+
+.img-item {
+    height: nth(
+        $height,
+        1
+     );
+    width: nth(
+        $width,
+        16
+     );
+}

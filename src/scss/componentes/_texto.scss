@@ -1,8 +1,12 @@
 //Texto scss
 @import '../bases/variables';
 
-.rojo, .negro {
+
+.card-title, .rojo, .negro, h5 {
     font-family: $font;
+}
+
+.rojo, .negro {
     font-size: nth(
         $font-size,
         3
@@ -22,6 +26,12 @@
     
 }
 .contador {
-    border: 1px solid #000;
-    padding: 0.5em;
+    padding: nth(
+        $padding,
+        2
+    );
+    margin: nth(
+        $margin,
+        5
+    );
 }

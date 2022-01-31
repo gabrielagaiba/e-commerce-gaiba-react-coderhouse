@@ -1,19 +1,7 @@
 //Cards scss
 @import '../bases/variables';
 
-.body-style, .main-style {
-    background-color: rgb(243, 235, 226);
-}
-
-.main-style {
-    margin: nth(
-        $margin,
-        5
-    );
-    width: nth(
-        $width,
-        17
-     );
+.card-body {
 }
 
 .card-container {
@@ -29,6 +17,20 @@
         17
      );
 
+}
+
+.contador-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: nth(
+        $margin,
+        5
+    );
+    
 }
 
 .card {
