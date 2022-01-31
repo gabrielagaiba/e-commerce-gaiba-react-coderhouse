@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Proyecto React JS - E-commerce Rabona
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio contiene el código fuente del **e-commerce de RABONA**
 
-## Available Scripts
+Este proyecto fue desarrollado durante el curso de **React JS** de CoderHouse, dictado por el Profesor **Horacio Gutierrez**. El objetivo del proyecto final es poner en práctica los conocimientos aprendidos en dicho curso.
 
-In the project directory, you can run:
+A continuación se detallan las herramientas utilizadas para el desarrollo y un instructivo que permite descargar e instalar el proyecto localmente.
+A su vez, se describe la **Funcionalidad** de la aplicación web, acompañado de un video demostrativo.
 
-### `npm start`
+Al final de la página se encuentran los datos de la autora.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Funcionalidad
 
-### `npm test`
+Esta aplicación web presenta al usuario los productos ofrecidos por **Rabona**, el usuario puede ver todo el listado de productos o seleccionarlos según su categoría. Sí el usuario lo desea puede ver el detalle de cada producto. En esta vista tiene la opción de elegir la cantidad de unidades del producto que desea. Dicho número tiene que ser positivo, mayor a 0 y menor al stock disponible.
+Luego puede decidir si quiere seguir comprando, donde retorna la vista al listado de productos o finalizar la compra, que lo redirigirá a completar un formulario.
+En esta vista el usuario puede borrar el elemento o algún elemento de la lista o vaciar el carrito. 
+En el caso que desee finalizar su compra deberá completar el formulario correspondiente con su información.
+Al confirmar la compra los datos que completó se almacenan en la base de datos, junto con el detalle de la compra y se muestra al usuario el número de orden correspondiente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Demostración
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Video
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Diseño
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tools
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- HTML
+- CSS
+- Sass
+- JavaScript
+- React JS
+- Babel
+- WebPack
+- Create-react-app
+- React-router-dom
+- Firebase
+- Firestore
+- Git
+- GitHub
 
-## Learn More
+<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a>
+<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
+<a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>
+<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/></a>
+<a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/></a>
+<a href="https://webpack.js.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/></a>
+<a href="https://create-react-app.dev/" target="_blank" rel="noreferrer"> <img src="https://seeklogo.com/images/C/create-react-app-logo-BA592B4FB4-seeklogo.com.png" alt="create-react-app" width="40" height="40"/></a>
+<a href="https://reactrouter.com/" target="_blank" rel="noreferrer"><img src="https://seeklogo.com/images/R/react-router-logo-AB5BFB638F-seeklogo.com.png" alt="react-router-dom" width="40" height="40"/></a>
+<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/></a>
+<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://retool.com/integrations-logos/firestore.svg" alt="firestore" width="40" height="40"/></a>
+<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
+<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="git-hub" width="40" height="40"/></a>
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Instalación
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Pre requisitos:
 
-### Code Splitting
+    - Instalar NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        [https://nodejs.org/es/download/](https://nodejs.org/es/download/)
+    - Instalar Git
+        
+        [https://gitforwindows.org/](https://gitforwindows.org/)
 
-### Analyzing the Bundle Size
+1- Clonar el repositorio deGitHub
+    
+     git clone https://github.com/gabrielagaiba/e-commerce-gaiba-react-coderhouse.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2- Moverse al directorio del proyecto
 
-### Making a Progressive Web App
+    cd e-commerce-gaiba-react-coderhouse
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3- Instalar las dependencias del proyecto
 
-### Advanced Configuration
+    npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4- Ejecutar el proyecto
 
-### Deployment
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+¡Listo! Esto deberia abrir una pestaña en nuestro navegador en la URL *http://localhost:3000* donde podemos utilizar la aplicación web.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Autora
+
+**Gabriela Gaiba** 
+
+<a href="mailto:gabrielgaiba@gmail.com"><img src="../e-commerce-gaiba/public/gmail.png" alt="email" width="15" height="15"/> gabrielagaiba@gmail.com</a>
+
+<a href="https://github.com/gabrielagaiba" target="_blank" rel="noreferrer"> <img src="../e-commerce-gaiba/public/github.png" alt="git-hub" width="15" height="15"/> https://github.com/gabrielagaiba</a>
+
+<a href="https://www.linkedin.com/in/gabriela-gaiba-12b61487/" target="_blank" rel="noreferrer"> <img src="../e-commerce-gaiba/public/linkedin.png" alt="git-hub" width="15" height="15"/> https://www.linkedin.com/in/gabriela-gaiba-12b61487/</a>
+
+
+
+
