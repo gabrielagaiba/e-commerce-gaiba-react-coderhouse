@@ -16,8 +16,8 @@ const ModalDatos = ({onClose}) => {
               {compra ? 
                 <div>Su compra fue registrada con exito! Orden de compra: {compra}</div> 
                 : 
-                <div class="spinner-border text-secondary" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-secondary" role="status">
+                  <span className="visually-hidden">Loading...</span>
                 </div>}
             </div>
             <div className="modal-footer">

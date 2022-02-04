@@ -15,8 +15,16 @@ const Formulario = () => {
         setIdCompra(null);
     }
 
+    const showModal = () => {
+        const modal = document.getElementById('modalDatos');
+        modal.style.display = 'block';
+        modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
+        modal.className = 'modal fade show';
+    }
+
     const finalizarCompra = (event) => {
         event.preventDefault();
+        showModal();
         const nombre = event.target.elements.nombre.value;
         const mail = event.target.elements.mail.value;
         const telefono = event.target.elements.telefono.value;
@@ -69,7 +77,7 @@ const Formulario = () => {
                     </select>
                 </div>
                 <div className="col-12">
-                    <button type="submit" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDatos">
+                    <button type="submit" className="btn btn-success">
                         Terminar compra
                     </button>
                 </div>
