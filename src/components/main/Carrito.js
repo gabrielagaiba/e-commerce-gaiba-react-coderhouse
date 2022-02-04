@@ -25,7 +25,7 @@ const Carrito = () => {
                 </div>
                 <div>
                     <h3>Total $ {precioTotal}</h3>
-                    <button className="btn boton-count boton-restar" onClick={removerTodo}>Vaciar</button>
+                    <button className="btn boton-count btn-danger" onClick={removerTodo}>Vaciar</button>
                     <Formulario/>
                 </div>
             </>
@@ -34,7 +34,7 @@ const Carrito = () => {
             <>
                 <p>No hay productos en el carrito</p>
                 <Link to="/">
-                    <button className="btn boton-count boton-sumar">Inicio</button>                    
+                    <button className="btn boton-count btn-success">Inicio</button>                    
                 </Link>
             </>
             }

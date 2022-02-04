@@ -47,24 +47,24 @@ const Formulario = () => {
             <form className="row g-3" onSubmit={finalizarCompra}>
                 <div className="col-md-6">
                     <label className="form-label">Nombre y Apellido</label>
-                    <input type="text" className="form-control" name="nombre" placeholder="Nombre y apellido"/>
+                    <input type="text" className="form-control" name="nombre" placeholder="Nombre y apellido" required/>
                 </div>
                 <div className="col-md-6">
                     <label className="form-label">Email</label>
-                    <input type="email" className="form-control" name="mail" placeholder="Email"/>
+                    <input type="email" className="form-control" name="mail" placeholder="Email" required/>
                 </div>
                 <div className="col-md-6">
                     <label className="form-label">Teléfono</label>
-                    <input type="text" className="form-control" name="telefono" placeholder="Teléfono"/>
+                    <input type="text" className="form-control" name="telefono" placeholder="Teléfono" required/>
                 </div>
                 <div className="col-12">
                     <label className="form-label">Dirección</label>
-                    <input type="text" className="form-control" name="direccion" placeholder="Dirección"/>
+                    <input type="text" className="form-control" name="direccion" placeholder="Dirección" required/>
                 </div>
                 <div className="col-md-4">
                     <label className="form-label">Medio de pago</label>
                     <select name="metodo_pago" className="form-select" defaultValue={1}>
-                        <option value={'efectivo'}>Efectivo</option>
+                        <option value={'efectivo'} required>Efectivo</option>
                         <option value={'transferencia_bancaria'}>Transferencia bancaria</option>
                     </select>
                 </div>

@@ -1,12 +1,15 @@
 //error scss
 .page_404 {
     padding:40px 0; 
-    background:#fff; 
-    font-family: 'Arvo', serif;
+    background:$color-primero; 
+    font-family: $font;
 }
 
 .page_404  img {
-    width:100%;
+    width: nth(
+        $width,
+        17
+    );
 }
 
 .four_zero_four_bg{
@@ -23,7 +26,7 @@
 }
 			 
 .link_404{			 
-    color: #fff!important;
+    color: $color-primero!important;
     padding: 10px 20px;
     background: #39ac31;
     margin: 20px 0;

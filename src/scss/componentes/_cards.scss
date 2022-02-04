@@ -1,7 +1,11 @@
 //Cards scss
 @import '../bases/variables';
 
-.card-body {
+.card {
+    margin: nth(
+        $margin,
+        1
+    );
 }
 
 .card-container {

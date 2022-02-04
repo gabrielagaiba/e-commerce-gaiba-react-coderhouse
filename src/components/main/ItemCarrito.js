@@ -14,7 +14,7 @@ const ItemCarrito = ({ producto}) => {
                     <div className="card-body">
                         <h5 className="card-title">{producto.nombre}</h5>
                         <h6>Cantidad: {producto.cantidad} $ {producto.precio}</h6>
-                        <button className="btn boton-count boton-agregar" onClick={() => removerDelCarrito(producto.id)}>Borrar</button>
+                        <button className="btn boton-count btn-danger" onClick={() => removerDelCarrito(producto.id)}>Borrar</button>
                     </div>
                 </div>    
         </div>

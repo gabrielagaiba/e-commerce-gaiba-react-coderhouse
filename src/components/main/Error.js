@@ -13,7 +13,7 @@ const Error = () => {
                             <div className="contant_box_404">
                                 <h3 className="h3-error">Ups! Hubo un ERROR</h3>
                                 <p>La página no se encuentra disponible!</p>
-                                <Link to="/" className="link_404">Ir a Inicio</Link>
+                                <Link to="/"><button className="btn btn-success">Ir a Inicio</button></Link>
                             </div>
                         </div>
                     </div>

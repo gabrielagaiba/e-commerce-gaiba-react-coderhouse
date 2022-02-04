@@ -29,8 +29,8 @@ const ItemDetail = ( {item} ) => {
                     </div>
                     { cantidad ? 
                     <>
-                        <Link to="/"><button className="btn boton-count boton-agregar">Seguir comprando</button></Link>               
-                        <Link to="/carrito"><button className="btn boton-count boton-sumar">Finalizar compra</button></Link>
+                        <Link to="/"><button className="btn boton-count btn-primary">Seguir comprando</button></Link>               
+                        <Link to="/carrito"><button className="btn boton-count btn-success">Finalizar compra</button></Link>
                     </>
                 : 
                 <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>

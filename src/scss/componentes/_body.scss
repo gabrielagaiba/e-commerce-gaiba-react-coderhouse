@@ -2,16 +2,24 @@
 @import '../bases/variables';
 
 .body-style, .main-style {
-    background-color: rgb(243, 235, 226);
+    background-color: $color-body
 }
 
 .main-style {
-    margin: nth(
-        $margin,
-        5
-    );
     width: nth(
         $width,
         17
      );
+    height: nth(
+        $height,
+        3
+    );
+    margin: nth(
+        $margin,
+        5
+    );
+    padding: nth(
+        $padding,
+        1
+    );
 }

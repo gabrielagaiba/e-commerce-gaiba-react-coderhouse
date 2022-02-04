@@ -1,6 +1,7 @@
 //variables
 $font:'Acme', sans-serif;
-$font-size: 0.8em, 1em, 1.2em, 2em, 2.5em, 11em;
+$font-size: 0.8em, 1em, 1.2em, 2em, 2.5em, 5em;
+$color-body:rgb(243, 235, 226);
 $color-primero: rgb(255, 255, 255);
 $color-segundo: rgb(9, 54, 11);
 $color-tercero: rgb(110, 12, 9);
@@ -8,8 +9,8 @@ $color-cuarto: rgb(9, 10, 54);
 $color-quinto: rgb(0, 0, 0);
 $padding:0.3em, 0.5em, 1em, 2.5em, auto;
 $margin:0.3em, 1em, 2.5em, 1em, auto;
-$width: 0.8em, 1.2em, 1.3em, 1.5em, 1.7em, 2em, 2.5em, 5em, 8em, 10em, 12em, 14em, 16em, 20em, 24em, auto, 90%;
-$height: 12em;
+$width: 0.8em, 1.2em, 1.3em, 1.5em, 1.7em, 2em, 2.5em, 5em, 8em, 10em, 12em, 14em, 16em, 20em, 24em, auto, 85%, 100%;
+$height: 12em, 50em, 33em;
 
 %active-hover {
     transform: scale(1.1);
