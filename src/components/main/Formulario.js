@@ -3,11 +3,17 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore"; //trat
 import { useConsumirContexto } from "../../CartContext";
 
 import { db } from "../../firebase";
+import ModalDatos from "./ModalDatos";
 
 
 const Formulario = () => {
 
-    const { carrito, removerTodo, precioTotal } = useConsumirContexto();
+    const { carrito, removerTodo, precioTotal, setIdCompra } = useConsumirContexto();
+
+    const vaciarCarritoPostCompra = () => {
+        removerTodo();
+        setIdCompra(null);
+    }
 
     const finalizarCompra = (event) => {
         event.preventDefault();
@@ -33,39 +39,43 @@ const Formulario = () => {
         })
 
         .then((resultado) => {
-            alert('Su compra fue registrada con exito! Orden de compra: ' + resultado.id);
-            removerTodo();
+            setIdCompra(resultado.id);
         })
     }
     return(
-        <form className="row g-3" onSubmit={finalizarCompra}>
-            <div className="col-md-6">
-                <label className="form-label">Nombre y Apellido</label>
-                <input type="text" className="form-control" name="nombre" placeholder="Nombre y apellido"/>
-            </div>
-            <div className="col-md-6">
-                <label className="form-label">Email</label>
-                <input type="email" className="form-control" name="mail" placeholder="Email"/>
-            </div>
-            <div className="col-md-6">
-                <label className="form-label">Teléfono</label>
-                <input type="text" className="form-control" name="telefono" placeholder="Teléfono"/>
-            </div>
-            <div className="col-12">
-                <label className="form-label">Dirección</label>
-                <input type="text" className="form-control" name="direccion" placeholder="Dirección"/>
-            </div>
-            <div className="col-md-4">
-                <label className="form-label">Medio de pago</label>
-                <select name="metodo_pago" className="form-select" defaultValue={1}>
-                    <option value={'efectivo'}>Efectivo</option>
-                    <option value={'transferencia_bancaria'}>Transferencia bancaria</option>
-                </select>
-            </div>
-            <div className="col-12">
-                <button type="submit" className="btn btn-success">Terminar compra</button>
-            </div>
-        </form>
+        <>
+            <form className="row g-3" onSubmit={finalizarCompra}>
+                <div className="col-md-6">
+                    <label className="form-label">Nombre y Apellido</label>
+                    <input type="text" className="form-control" name="nombre" placeholder="Nombre y apellido"/>
+                </div>
+                <div className="col-md-6">
+                    <label className="form-label">Email</label>
+                    <input type="email" className="form-control" name="mail" placeholder="Email"/>
+                </div>
+                <div className="col-md-6">
+                    <label className="form-label">Teléfono</label>
+                    <input type="text" className="form-control" name="telefono" placeholder="Teléfono"/>
+                </div>
+                <div className="col-12">
+                    <label className="form-label">Dirección</label>
+                    <input type="text" className="form-control" name="direccion" placeholder="Dirección"/>
+                </div>
+                <div className="col-md-4">
+                    <label className="form-label">Medio de pago</label>
+                    <select name="metodo_pago" className="form-select" defaultValue={1}>
+                        <option value={'efectivo'}>Efectivo</option>
+                        <option value={'transferencia_bancaria'}>Transferencia bancaria</option>
+                    </select>
+                </div>
+                <div className="col-12">
+                    <button type="submit" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDatos">
+                        Terminar compra
+                    </button>
+                </div>
+            </form>
+            <ModalDatos onClose={vaciarCarritoPostCompra}/>
+        </>
     )
 }
 

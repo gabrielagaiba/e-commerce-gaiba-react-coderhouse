@@ -12,6 +12,7 @@ const CustomProvider = ({children})=>{
     const [cantidadTotal, setCantidadTotal] = useState(0);
     const [precioTotal, setPrecioTotal] = useState(0);
     const [carrito, setCarrito]= useState([]);
+    const [compra, setCompra ] = useState(null)  
 
     const agregarAlCarrito = (cantidad,nuevoProducto)=> {
         const copiaCarrito = [...carrito]
@@ -47,13 +48,19 @@ const CustomProvider = ({children})=>{
         }
     }
 
+    function setIdCompra(value){
+        setCompra(value);
+    }
+
     const valorDelContexto = {
         cantidadTotal,
         carrito,
         precioTotal,
+        compra,
         agregarAlCarrito,
         removerDelCarrito,
         removerTodo,
+        setIdCompra
     }
 
     return (
