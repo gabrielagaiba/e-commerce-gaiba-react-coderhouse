@@ -5,7 +5,7 @@ import ItemDetailContainer from "./components/main/ItemDetailContainer";
 import ItemListContainer from "./components/main/ItemListContainer";
 import Carrito from "./components/main/Carrito";
 import Error from "./components/main/Error";
-import CustomProvider from './CartContext'
+import CustomProvider from "./CartContext";
 import Formulario from "./components/main/Formulario";
 
 function App() {

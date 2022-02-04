@@ -1,12 +1,7 @@
 import ItemCarrito from "./ItemCarrito";
 import { useConsumirContexto } from "../../CartContext";
 import { Link } from "react-router-dom";
-import Formulario from "./Formulario"
-
-// process: es un variable "global" en NodeJS q nos permite acceder a la informaciond el proceo entre ellas las varialbes de entorno
-console.log(process.env);
-
-//consistencia en Id y chequeo de stock
+import Formulario from "./Formulario";
 
 const Carrito = () => {
     const { carrito, removerTodo, precioTotal } = useConsumirContexto()
@@ -28,8 +23,7 @@ const Carrito = () => {
                     <button className="btn boton-count btn-danger" onClick={removerTodo}>Vaciar</button>
                     <Formulario/>
                 </div>
-            </>
-            
+            </>            
             ) : 
             <>
                 <p>No hay productos en el carrito</p>

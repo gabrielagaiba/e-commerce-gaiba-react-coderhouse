@@ -1,5 +1,5 @@
 import React from "react";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore"; //tratar de usar updateDoc
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useConsumirContexto } from "../../CartContext";
 
 import { db } from "../../firebase";

@@ -1,6 +1,5 @@
-// Importar la funcion de inicializacion de la app, local 
 import { initializeApp } from "firebase/app"
-import { getFirestore } from "firebase/firestore" //varia según el servicio que consumamos
+import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_apiKey,
@@ -14,5 +13,4 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig)
 
-//1) Obtener una referencia de la db
-export const db = getFirestore(app) //varia según el servicio que consumamos
+export const db = getFirestore(app)
