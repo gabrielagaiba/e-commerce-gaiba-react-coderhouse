@@ -28,18 +28,18 @@ https://user-images.githubusercontent.com/89227111/152850537-6423af85-dc82-4eb0-
 
 ---
 
-## Diseño 
+## Diseño
 
-<img src="../e-commerce-gaiba/public/desktop-1.png" alt="desktop-view" width="33%"/> 
-<img src="../e-commerce-gaiba/public/desktop-2.png" alt="desktop-view" width="33%"/> 
-<img src="../e-commerce-gaiba/public/desktop-3.png" alt="desktop-view" width="33%"/>
+<img alt="desktop-1" src="https://user-images.githubusercontent.com/89227111/152852292-c1458744-ba62-45d7-aa31-45d53befc2e4.png" width="40%">
+<img alt="desktop-2" src="https://user-images.githubusercontent.com/89227111/152852357-e2960a24-8b12-49c7-ac0e-9fc8957c7335.png" width="40%">
+<img alt="desktop-3" src="https://user-images.githubusercontent.com/89227111/152852404-ad6a9a05-18de-407d-b902-11bbfc8894d6.png" width="40%">
 
 ---
 
 
 ## Responsive
 
-<img src="../e-commerce-gaiba/public/responsive.png" alt="responsive-view" width="25%"/>
+<img width="25%" alt="responsive" src="https://user-images.githubusercontent.com/89227111/152852508-6a520f32-42d1-4fba-a256-f9eed5e16bb7.png">
 
 ---
 
@@ -110,11 +110,12 @@ https://user-images.githubusercontent.com/89227111/152850537-6423af85-dc82-4eb0-
 
 **Gabriela Gaiba** 
 
-<a href="mailto:gabrielgaiba@gmail.com"><img src="../e-commerce-gaiba/public/gmail.png" alt="email" width="15" height="15"/> gabrielagaiba@gmail.com</a>
+<a href="mailto:gabrielgaiba@gmail.com"><img src="https://user-images.githubusercontent.com/89227111/152853488-f1f92e75-f7df-43d5-b722-00fbe529ddd2.png" alt="email" width="15" height="15"/> gabrielagaiba@gmail.com</a>
 
-<a href="https://github.com/gabrielagaiba" target="_blank" rel="noreferrer"> <img src="../e-commerce-gaiba/public/github.png" alt="git-hub" width="15" height="15"/> https://github.com/gabrielagaiba</a>
+<a href="https://github.com/gabrielagaiba" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/89227111/152853419-aedfac6e-420e-4307-8d15-6a010ec4b345.png" alt="git-hub" width="15" height="15"/> https://github.com/gabrielagaiba</a>
 
-<a href="https://www.linkedin.com/in/gabriela-gaiba-12b61487/" target="_blank" rel="noreferrer"> <img src="../e-commerce-gaiba/public/linkedin.png" alt="git-hub" width="15" height="15"/> https://www.linkedin.com/in/gabriela-gaiba-12b61487/</a>
+<a href="https://www.linkedin.com/in/gabriela-gaiba-12b61487/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/89227111/152852883-eb4d5d11-fbbd-4d16-86a4-f8eb808e3315.png" alt="git-hub" width="15" height="15"/> https://www.linkedin.com/in/gabriela-gaiba-12b61487/</a>
+
 
 
 
