@@ -13,7 +13,8 @@ Al final de la página se encuentran los datos de la autora.
 
 ## Funcionalidad
 
-Esta aplicación web presenta al usuario los productos ofrecidos por **Rabona**, el usuario puede ver todo el listado de productos o seleccionarlos según su categoría. Sí el usuario lo desea puede ver el detalle de cada producto. En esta vista tiene la opción de elegir la cantidad de unidades del producto que desea. Dicho número tiene que ser positivo, mayor a 0 y menor al stock disponible.
+Esta aplicación web presenta al usuario los productos ofrecidos por **Rabona**, el usuario puede ver todo el listado de productos o seleccionarlos según su categoría. 
+Sí el usuario lo desea puede ver el detalle de cada producto. En esta vista tiene la opción de elegir la cantidad de unidades del producto que desea. Dicho número tiene que ser positivo, mayor a 0 y menor al stock disponible.
 Luego puede decidir si quiere seguir comprando, donde retorna la vista al listado de productos o finalizar la compra, que lo redirigirá a completar un formulario.
 En esta vista el usuario puede borrar el elemento o algún elemento de la lista o vaciar el carrito. 
 En el caso que desee finalizar su compra deberá completar el formulario correspondiente con su información.
@@ -26,11 +27,21 @@ Al confirmar la compra los datos que completó se almacenan en la base de datos,
 Video
 
 
+
 ---
 
 ## Diseño 
-imagenes de cmo queda en desktop y responsive
 
+<img src="../e-commerce-gaiba/public/desktop-1.png" alt="desktop-view" width="33%"/> 
+<img src="../e-commerce-gaiba/public/desktop-2.png" alt="desktop-view" width="33%"/> 
+<img src="../e-commerce-gaiba/public/desktop-3.png" alt="desktop-view" width="33%"/>
+
+---
+
+
+## Responsive
+
+<img src="../e-commerce-gaiba/public/responsive.png" alt="responsive-view" width="25%"/>
 
 ---
 
@@ -69,14 +80,10 @@ imagenes de cmo queda en desktop y responsive
 
 ## Instalación
 
-- Pre requisitos:
+- Pre-requisitos:
 
-    - Instalar NPM
-
-        [https://nodejs.org/es/download/](https://nodejs.org/es/download/)
-    - Instalar Git
-        
-        [https://gitforwindows.org/](https://gitforwindows.org/)
+    - Instalar [npm](https://nodejs.org/es/download/)
+    - Instalar [Git](https://gitforwindows.org/)
 
 1- Clonar el repositorio de GitHub
     
@@ -90,7 +97,9 @@ imagenes de cmo queda en desktop y responsive
 
     npm install
 
-4- Ejecutar el proyecto
+4- Crear un archivo llamado *.env* en el directorio del proyecto. Dentro de este archivo incluir las variables de entorno recibidas junto con la entrega. Dichas variables son utilizadas para acceder a la Base de Datos de Firebase.
+
+5- Ejecutar el proyecto
 
     npm start
 
