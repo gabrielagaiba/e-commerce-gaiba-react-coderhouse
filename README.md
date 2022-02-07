@@ -24,9 +24,7 @@ Al confirmar la compra los datos que completó se almacenan en la base de datos,
 
 ## Demostración
 
-Video
-
-
+https://user-images.githubusercontent.com/89227111/152850537-6423af85-dc82-4eb0-8f51-b8fdbab06ce6.mp4
 
 ---
 
